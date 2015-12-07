@@ -1,0 +1,328 @@
+<tw-storydata name="transhuman vr biology experiment idm cake brainstom blog" startnode="27" creator="Twine" creator-version="2.0.10" ifid="72C03DD9-CEF4-4242-893F-390579D494D7" format="SugarCube" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">}
+body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+}
+#passages {
+  margin:0;
+  padding: 0;
+  height:100%;
+}
+#passages * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.passage {
+  position:relative;
+  width: 60%;
+  font-size:1em;
+  font-family: "Helvetica", Consolas, Monaco, monospace;
+  margin: 2em auto 0 auto;
+}
+.passage .content {
+  top: 500px;
+  width:100%;
+  border: #fff double 0.5em;
+  border-radius: 1em;
+  padding: 1em;
+}
+a.internalLink, a.externalLink {
+  border-bottom: solid #fff 1px;
+  color:#eee;
+  font-weight:normal;
+}
+a.internalLink:hover, a.externalLink:hover {
+  text-decoration:none;
+  border-bottom: none;
+  color:#000;
+  background-color:#fff;
+  font-weight:normal;
+  padding-left: 0;
+}
+a.internalLink:active, a.externalLink:active {
+  border-bottom: 0;
+}
+@media screen and (max-width: 960px) {
+  .passage {
+    font-size: 1.5em;
+  width: 75%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .passage {
+    font-size: 1.25em;
+  width: 95%;
+  }
+}
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="remember" tags="Ubermensch" position="2736,1976">
+&lt;&lt;if ndef $stones&gt;&gt;
+&lt;&lt;set $stones = 0&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;set $stones = $stones&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if ndef $robot&gt;&gt;
+&lt;&lt;set $robot = 0&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;set $robot = 1&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $stones lt 5&gt;&gt;
+&#39;&#39;1. ([[Forgetting]])Transcending Human Language&#39;&#39;
+
+A shining landscape. All around you there are crystal ferns, [[jungle plants]], and [[birds]] frozen in time. You stand naked on a field of cystalline crabgrass, through which you can see a terrifying ocean of cryptic symbols swirling below.
+
+Genlty suspended just above the ground are [[stones]].
+
+Stones: $stones
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $stones gte 4&gt;&gt;
+[[dizziness overtakes you..|black]]
+&lt;&lt;endif&gt;&gt;
+
+NOTE TO DEVELOPERS: LETS FIND A WAY TO HIDE THE IMPACT OF THE BEGENNING IF STATEMENTS AS EXTRA LINES ON THIS PAGE. WHY SHOULD THE TEXT BEGIN SO LOW ON THE PAGE YAKNOW? PLZNTHX -BW
+
+THERE IS A CONTINUITY ISSUE HERE: IF YOUVE GIVEN THE ROBOT ALL OF YOUR STONES THE COMMENT OF THEM FALLING OUT OF YOUR POCKET IS BAD. IS THE IF NDEF STATEMENT ON VARIABLE HERE WORKING? SIMILARLY I REMOVED TEH +1 STONE HERE B/C THERE IS A &#39;PICK UP&#39; OPTION NOW. OKAY WHATEVER IS JUST TWINE BUT MAYBE SHUFFLE THESE ERRORS OUT ON YOUR TURN. idk maybe we need a give variable or maybe it should be conditional on stones count. whatever its not that serious -BW
+</tw-passagedata>
+<tw-passagedata pid="2" name="Colors" tags="" position="3152,2148">
+&lt;&lt;if $stones gt 6&gt;&gt;[[A crow appears. It wears a black jewel|black]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $stones lte 6&gt;&gt;At your feet a small [[green]] worm inches it way along.&lt;&lt;endif&gt;&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="3" name="Reverberation" tags="" position="2980,2447">echos of silvery grain shoots one after another in scattered rhythms flow from all around - forming a jungle of blue purple green translucent glimmer. it speard fast and moves like fire.
+
+[[just as quickly as it formed, a rumbling shakes the ground|dub3000]]
+
+
+Stones: $stones</tw-passagedata>
+<tw-passagedata pid="4" name="Cash" tags="" position="2460,2436">ATTN PROGRAMMING TEAM: THERE IS AN ISSUE WITH THIS PASSAGE, CAN SOMEONE PLEASE TAKE A LOOK AT THE &#39;ROBOT&#39; VARIABLE IF STATEMENT HERE AND TRY TO GET IT WORKING PLZNTHX
+-BW
+[[KEEP PLAYING|stones]]
+
+&lt;&lt;if $robot lt 1&gt;&gt;
+
+&lt;&lt;if $stones lte 5&gt;&gt;[[Given time and space|BANKAR]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $stones gt 5&gt;&gt;[[the weight of gravity loosen its grip on your feet|bnkr]]&lt;&lt;endif&gt;&gt;
+
+&lt;&lt;endif&gt;&gt;
+
+&lt;&lt;if $robot gte 1&gt;&gt;
+&lt;img src=&quot;porn.png&quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;alt text&quot;&gt;
+the robot thanks you in perfect english. [[the weight of gravity loosen its grip on your feet|bnkr]]
+&lt;&lt;endif&gt;&gt;
+Stones: $stones</tw-passagedata>
+<tw-passagedata pid="5" name="Forgetting" tags="" position="2576,1976">[[remember]]... [[remember]] ...</tw-passagedata>
+<tw-passagedata pid="6" name="jungle plants" tags="" position="3168,1976">&lt;&lt;if $stones lt 4&gt;&gt;
+Creature of the deep.  You seem to [[remember]] a simpler time.
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $stones gte 4&gt;&gt;
+[[dizziness overtakes you..|black]]
+&lt;&lt;endif&gt;&gt;
+Genlty suspended just above the ground are [[stones]].
+</tw-passagedata>
+<tw-passagedata pid="7" name="stones" tags="" position="2884,2188">
+&lt;&lt;if ndef $stones&gt;&gt;
+&lt;&lt;set $stones = 0&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;set $stones = $stones&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $stones gte 1&gt;&gt;[[Pick up another stone|stones]]&lt;&lt;endif&gt;&gt;//&lt;&lt;if $stones lt 1&gt;&gt;[[Pick up a stone|stones]]&lt;&lt;endif&gt;&gt;
+
+&gt;there are three volumes to choose from:
+&gt;&gt;[[Colors]]
+&gt;&gt;[[Reverberation]]
+&gt;&gt;[[Cash]]
+
+Stones: $stones
+
+&lt;&lt;set $stones to $stones + 1&gt;&gt;
+
+&lt;&lt;if ndef $robot&gt;&gt;
+&lt;&lt;set $robot = 0&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;set $robot = $robot&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="8" name="bnkr" tags="" position="2540,2656">You are flying. You can see below you countless streams of artifacts of 8th century Kiev pouring from the lips of a legless stone Lenin. His hands are red with [[paint]].
+
+You [[remember|stones]] the way home.</tw-passagedata>
+<tw-passagedata pid="9" name="BANKAR" tags="" position="2676,2668">Given enough lifetimes anyone can become a hero. 
+Given enough time any man can become great
+Given enough will and way can become
+Given enough 
+anyone
+
+You [[remember|black]] the way home.
+</tw-passagedata>
+<tw-passagedata pid="10" name="dub3000" tags="" position="3008,2572">Breaking the surface of the churning ocean of symbols, blaring countless [[wubs]] shatter the crystalline landscape.</tw-passagedata>
+<tw-passagedata pid="11" name="birds" tags="" position="2496,2160">&lt;&lt;if $stones lt 4&gt;&gt;
+You can&#39;t [[remember]] what it was like to fly.
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $stones gte 4&gt;&gt;
+[[dizziness overtakes you..|black]]
+&lt;&lt;endif&gt;&gt;
+Genlty suspended just above the ground are [[stones]].
+</tw-passagedata>
+<tw-passagedata pid="12" name="black" tags="" position="3584,2604">&lt;&lt;if $robot gte 1&gt;&gt;
+the stones fall from your pockets
+the stones land silently just above the ground
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;set $stones to 0&gt;&gt;
+
+2.
+
+a [[speaker]] plays in the the [[dark]].
+</tw-passagedata>
+<tw-passagedata pid="13" name="speaker" tags="" position="3732,2688">there is a fuzz, a crackle, as you [[turn]] your head it shifts</tw-passagedata>
+<tw-passagedata pid="14" name="dark" tags="" position="3860,2544">all around you seems to be a fog of non-sight, this black noise is broken up by patterns and images flashing in and out of tune. as you [[face the setting sun a face appears|west]]</tw-passagedata>
+<tw-passagedata pid="15" name="wubs" tags="" position="3056,2720">&lt;&lt;set $robot to 1&gt;&gt;
+Speaking in broken hindi, a robot aproaches and asks you meekly for a dollar.  Wearing has a smart hat on which accentuates his manly profile. 
+
+[[give the robot your stones|Cash]]
+[[inspect it further|green]]
+
+There are birds noisely singing in the distance[[.|birds]]
+
+
+</tw-passagedata>
+<tw-passagedata pid="16" name="green" tags="" position="3472,2152">
+&lt;&lt;if $robot lt 1&gt;&gt;
+You look closely at the [[worm]]. Is that a slight whirring noise it&#39;s making? Unsure if it is organic, you place your hand on the ground so that it might climb onto your [[skin]]
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $robot gte 1&gt;&gt;
+You look closely at the robot. Is that a slight breathing noise it&#39;s making? Unsure if it is really inorganic, you reach out to [[touch it|skin]]
+&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="17" name="worm" tags="" position="3700,2096">1/2 an inch long, with two sets of legs, one in front, one in back. It&#39;s [[skin seems slightly marbeled|skin]]. is there a slight whirring noise coming from it? unsure if it is organic, you [[listen]] closely.</tw-passagedata>
+<tw-passagedata pid="18" name="skin" tags="" position="3700,2248">As you make contact, a dizzyness overtakes you form the edges of your vision. [[fade to black|black]]</tw-passagedata>
+<tw-passagedata pid="19" name="turn" tags="" position="3864,2684">spinning around you hear a whirl of sound breakign through the noise. pulses and horns swell up, battering rhythms fold in and out of the walls of noises. [[look towards the rising sun|east]]</tw-passagedata>
+<tw-passagedata pid="20" name="east" tags="" position="4412,2796">[[return1]] </tw-passagedata>
+<tw-passagedata pid="21" name="paint" tags="" position="2548,2816">[[A figure approaches|wubs]]</tw-passagedata>
+<tw-passagedata pid="22" name="listen" tags="" position="3852,2096">[[there is a slight weezing, and the clicks of a tiny tongue tasting the air. a radiant glow appears around it|glow]]</tw-passagedata>
+<tw-passagedata pid="23" name="glow" tags="" position="3852,2248">[[it seems to vibrate intensly - it repells you!|flight]] </tw-passagedata>
+<tw-passagedata pid="24" name="flight" tags="" position="3852,2396">at a great spead, you fly through the air towards [[the distant mountain|mountain]]</tw-passagedata>
+<tw-passagedata pid="25" name="west" tags="" position="4508,2608">[[return1]] </tw-passagedata>
+<tw-passagedata pid="26" name="mountain" tags="" position="4568,2432">[[return1]] </tw-passagedata>
+<tw-passagedata pid="27" name="TOC" tags="" position="2284,948">1. [[remember]]
+2. [[a stainless steel door|openofficeentry]]
+3. [[ultra]]</tw-passagedata>
+<tw-passagedata pid="28" name="return1" tags="" position="4152,1904">[[TOC]] </tw-passagedata>
+<tw-passagedata pid="29" name="openofficeentry" tags="" position="2164,1392">The door opens to reveal [[a long, open room|OpenOffice]].
+</tw-passagedata>
+<tw-passagedata pid="30" name="OpenOffice" tags="" position="2164,1540">Floor to celiing [[windows|window]] line the [[edges]] of this [[clean]] modern space. Even with bright [[daylight]] pouring through, the sterile [[flourescent buzz|flourescent]] seems to wrap everything here.</tw-passagedata>
+<tw-passagedata pid="31" name="window" tags="" position="1900,1552">Peering out the window, you notice a very small mite crawling on the surface of the glass. [[look closer]]</tw-passagedata>
+<tw-passagedata pid="32" name="edges" tags="" position="1832,1416">Extending in long straight lines 2000 feet long, there is [[sky|daylight]], [[clouds]], and [[water|water1]]</tw-passagedata>
+<tw-passagedata pid="33" name="clean" tags="" position="1988,1696">This [[office|daylight]] is pristine</tw-passagedata>
+<tw-passagedata pid="34" name="daylight" tags="" position="1744,1700">Light soaks the room, a glow seems to come from [[everywhere|OpenOffice2]] at once.</tw-passagedata>
+<tw-passagedata pid="35" name="flourescent" tags="" position="2024,1856">Light soaks the room, a glow seems to come from [[everywhere|OpenOffice2]] at once.</tw-passagedata>
+<tw-passagedata pid="36" name="clouds" tags="" position="1680,1516">The clouds are [[still|window]]</tw-passagedata>
+<tw-passagedata pid="37" name="water1" tags="" position="1652,1364">Just the smooth surface of the [[water|blue]], the [[blue]] sky and faint pale [[clouds]].</tw-passagedata>
+<tw-passagedata pid="38" name="blue" tags="" position="1504,1488">The [[colors|clouds]] are [[soft|clouds]], wet and [[deep|daylight]].</tw-passagedata>
+<tw-passagedata pid="39" name="look closer" tags="" position="1844,1828">&lt;&lt;set $raremite to 99&gt;&gt;
+[[You pluck the small grey mite from the wall and drop it in your pocket.|OpenOffice2]]</tw-passagedata>
+<tw-passagedata pid="40" name="OpenOffice2" tags="" position="1504,2088">A gentle [[music|officemusic]] plays faintly in the background, it is so slight that it is sometimes masked by your [[breathing]].</tw-passagedata>
+<tw-passagedata pid="41" name="officemusic" tags="" position="1756,2180">[[Hand drums and tamborines blend with the smooth melodies of clarinets and acoustic dulcimers.|breathing]] </tw-passagedata>
+<tw-passagedata pid="42" name="breathing" tags="" position="1604,2260">The gentle rhythm of the music seems to be in time with your [[breath|OpenOffice3]]</tw-passagedata>
+<tw-passagedata pid="43" name="OpenOffice3" tags="" position="1604,2416">You turn to look again at this long, open, bright space. It seems unreal, and the grid of windows and carpets seems to extend beyond sight. 
+Every 30 feet or so down the long grey carpet there are sculptures on tall, flat [[plinths]].
+
+&lt;&lt;if ndef $visit&gt;&gt;
+&lt;&lt;set $visit = 0&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;set $visit = 1&gt;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="44" name="plinths" tags="" position="1464,2420">[[The first plinth|plinth1]]
+[[The second plinth|plinth2]]
+&lt;&lt;if $visit gte 2&gt;&gt;
+[[The third plinth appears|plinth3]]
+&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="45" name="plinth1" tags="" position="764,2212">You approach the first plinth and see a tall figure carved of black stone. This androgenous nude has [[four|fourlegs]] legs. Very long arms hold [[a ruler]] and what appears to be [[the shrunken head and forlimbs of a hyena|hyena]]. There is a [[plaque|plaque1]] beside it.
+
+[[return|plinths]]
+&lt;&lt;set $visit to $visit + 1&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="46" name="plinth2" tags="" position="1068,2608">The second plinth holds a slight scaffolding. Along the upper beams there are grey fleshy masses just slightly smaller than your torso. Throught their translucent skin dark puple blood is pulsing in webs of tiny veins. They are wet and heavy, they do not move.
+
+&lt;&lt;if $raremite lt 1&gt;&gt;
+There seem to be [[small grey grains|grains]] pushing out from pores on the creatures and fallign to the ground.
+&lt;&lt;endif&gt;&gt;
+
+[[return|plinths]]
+&lt;&lt;set $visit to $visit + 1&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="47" name="plinth3" tags="" position="1204,2056">[[Approaching the third plinth a vibration fills the air.|plinththree1]]</tw-passagedata>
+<tw-passagedata pid="48" name="fourlegs" tags="" position="612,2208">[[1.. 2.. 3.. 4..|plinth1]]</tw-passagedata>
+<tw-passagedata pid="49" name="a ruler" tags="" position="612,2344">[[It is an archetectural ruler, with three sides.|plinth1]]</tw-passagedata>
+<tw-passagedata pid="50" name="hyena" tags="" position="696,1924">It&#39;s small face is staring [[heavenward]], jaws agape as in mid bark.</tw-passagedata>
+<tw-passagedata pid="51" name="plaque1" tags="" position="612,2076">It reads:
+Justice and the Scavangers, 2022 - Mosqul Harring (b.1983)
+[[return|plinth1]]</tw-passagedata>
+<tw-passagedata pid="52" name="heavenward" tags="" position="784,1744">Following its glare, you see a small grey mite on the ceiling, but [[you cannot reach it.|plinth1]]
+&lt;&lt;if $raremite gt 1&gt;&gt;
+The pocket where you put your mite earlier [[feels odd..|grey0]] 
+&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="53" name="grey0" tags="" position="540,1204">ou reach into your pocket and pull out a thin [[grey goo|grey1]]..</tw-passagedata>
+<tw-passagedata pid="54" name="grains" tags="" position="928,2604">&lt;&lt;set $raremite to 99&gt;&gt;
+[[You pluck one up and put it in your pocket.|plinth2]]</tw-passagedata>
+<tw-passagedata pid="55" name="plinththree1" tags="" position="1204,1916">[[A buzzing sound grows stronger|plinththree2]]
+&lt;&lt;if $raremite gt 1&gt;&gt;
+The pocket where you put your mite earlier [[feels odd..|plinththree8]] 
+&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="56" name="plinththree2" tags="" position="1208,1780">[[above the plinth a grey cloud moves fluidly in the air|plinththree3]]</tw-passagedata>
+<tw-passagedata pid="57" name="plinththree8" tags="" position="912,1224">[[The swarm begins again to move, and this time with purpose.|plinththree9]] </tw-passagedata>
+<tw-passagedata pid="58" name="plinththree3" tags="" position="1208,1648">[[your heart quickens, is this movement aware of you?|plinththree4]]</tw-passagedata>
+<tw-passagedata pid="59" name="plinththree4" tags="" position="1208,1512">Two steps closer and the swarm stops, holds position prefectly still. Frozen in mid flight, as though time stopped for them. [[The vibration intensifies|plinththree5]]</tw-passagedata>
+<tw-passagedata pid="60" name="plinththree5" tags="" position="1208,1380">Another step forward, they shift slightly. The buzzing sound now goes silent. You can hear your [[breathing|breathing2]], and faint [[music|officemusic2]]</tw-passagedata>
+<tw-passagedata pid="61" name="breathing2" tags="" position="1060,1288">The gentle rhythm of the music seems to be in time with your [[breath|plinththree6]]</tw-passagedata>
+<tw-passagedata pid="62" name="officemusic2" tags="" position="1352,1288">[[Hand drums and tamborines blend with the smooth melodies of clarinets and acoustic dulcimers.|breathing2]] </tw-passagedata>
+<tw-passagedata pid="63" name="plinththree6" tags="" position="1216,1224">[[Another step closer..|plinththree7]]</tw-passagedata>
+<tw-passagedata pid="64" name="plinththree7" tags="" position="1216,1092">[[A you approach the suspended cloud, your breath disturbs it&#39;s edges, knocking tiny grey particles back and in swirls.|plinththree8]]</tw-passagedata>
+<tw-passagedata pid="65" name="plinththree9" tags="" position="1216,964">[[Before you can react they are covering you, covering your skin, down the back of your shirt. Their tiny mouths pulling apart your atoms|grey00]]</tw-passagedata>
+<tw-passagedata pid="66" name="grey00" tags="" position="668,1204">They fill your mouth, your eyes. As they lift you off the ground you the sting of their appetite numbs you.
+[[They consume you.|greyend]]</tw-passagedata>
+<tw-passagedata pid="67" name="greyend" tags="" position="668,804">This is the end.
+
+	[[heaven]]
+	[[purgatory]]
+	[[the deep]]
+	
+	
+[[TOC]] </tw-passagedata>
+<tw-passagedata pid="68" name="grey1" tags="" position="540,1072">It burns your skin and seems to be expanding! The rare mite has multiplied millions of times over! Wisps of the swarm take to the air, [[they cover your mouth|grey2]]. </tw-passagedata>
+<tw-passagedata pid="69" name="grey2" tags="" position="544,940">[[Consuming you, the mites design is revealed|greyend]]</tw-passagedata>
+<tw-passagedata pid="70" name="heaven" tags="" position="536,584">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="71" name="purgatory" tags="" position="688,584">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="72" name="the deep" tags="" position="836,584">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="73" name="ultra" tags="" position="2555,959">the cave
+
+Your eyes throb with a dull ache. Probing your face with an experimental hand, you can feel a sandpaper sensantion of coffee grounds in a thin layer of water.   Rubbing your eyes causes a stale pain to bubble to the surface.
+
+You open your eyes through a film of grit and stare into the cave.  As you peer into the yawning void, it draws you in, as by the blood of ancient gravity soaked into the stones.
+
+[[You fall]]</tw-passagedata>
+<tw-passagedata pid="74" name="You fall" tags="" position="2744,993">[img[&quot;afloat.png&quot;]]
+[img[&quot;./afloat.png&quot;]]
+[img[images/vlcsnap-2015-12-06-22h35m34s026.png]]
+
+&lt;img src=&quot;afloat.png&quot;&gt;
+&lt;img data-passage=&quot;afloat.png&quot;&gt;
+
+[[deeper]]</tw-passagedata>
+<tw-passagedata pid="75" name="deeper" tags="" position="2938,1124">and deeper, landing in a viscous slime of marine snow with no tangible bottom. Your hands and feet are no longer part of you; they have escaped you, retreating into the soup, obscured by the gray dank.
+
+Legless, armless now, you are [[enveloped]] by the sludge as you sink deeper into the abyss.</tw-passagedata>
+<tw-passagedata pid="76" name="enveloped" tags="" position="3115,1190">visions begin to take hold.
+
+flashes of bioluminescence swirl in the distance.</tw-passagedata>
+</tw-storydata>
